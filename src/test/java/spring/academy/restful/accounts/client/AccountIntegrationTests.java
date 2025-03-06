@@ -76,7 +76,7 @@ public class AccountIntegrationTests {
         assertEquals(2, accounts[0].getBeneficiaries().size());
         assertEquals(Percentage.valueOf("50%"), accounts[0].getBeneficiary("Annabelle").getAllocationPercentage());
 	// Some dead code here
-	if (1 != 2 ) {
+	if (1 == 2 ) {
            System.out.println("Hello, Sonar!");
 	}
     }
