@@ -38,7 +38,7 @@ jobs:
       - name: Print dummy secret
         env:
           SECRET_FOO: ${{ secrets.FOO }}
-        run: echo "SECRET_FOO: $SECRET_FOO"
+        run: echo "Hello, World"
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
