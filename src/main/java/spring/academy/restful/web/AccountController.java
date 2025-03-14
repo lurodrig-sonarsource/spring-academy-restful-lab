@@ -56,7 +56,7 @@ public class AccountController {
     public List<Account> accountSummary() {
 	// Will this create an issue in the analyzer?
 	if (1 == 2) {
-		System.out.println("Hello, Dummy!");
+		logger.info("Hello, Dummy!");
         }
         return accountManager.getAllAccounts();
     }
