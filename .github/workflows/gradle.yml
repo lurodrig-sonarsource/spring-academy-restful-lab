@@ -35,6 +35,10 @@ jobs:
           path: ~/.gradle/caches
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: ${{ runner.os }}-gradle
+      - name: Print dummy secret
+        env:
+          SECRET_FOO: ${{ secrets.FOO }}
+        run: echo "SECRET_FOO: $SECRET_FOO"
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
