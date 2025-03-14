@@ -54,6 +54,10 @@ public class AccountController {
      */
     @GetMapping(value = "/accounts")
     public List<Account> accountSummary() {
+	// Will this create an issue in the analyzer?
+	if (1 == 2) {
+		System.out.println("Hello, Dummy!")
+        }
         return accountManager.getAllAccounts();
     }
 
