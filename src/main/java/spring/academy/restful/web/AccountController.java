@@ -56,7 +56,11 @@ public class AccountController {
     public List<Account> accountSummary() {
 	// Will this create an issue in the analyzer?
 	if (1 == 2) {
-		logger.info("Hello, Dummy!");
+		int min = 0;
+                int max = 9;
+                Random randomGenerator = new Random();
+                int random = randomGenerator.nextInt(max - min) + min;
+		System.out.println("Hello, Dummy!");
         }
         return accountManager.getAllAccounts();
     }
